@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 
 
 const UsuarioSchema = mongoose.Schema({
-    strnombre:{
+    strNombre:{
         type:String,
         required: [true, "Es necesario ingresar tu Nombre"]
     },
-    strPrimeApellidos:{
+    strPrimerApellido:{
         type:String,
         required: [true, "Es necesario ingresar los apellidos"]
     },
@@ -24,7 +24,7 @@ const UsuarioSchema = mongoose.Schema({
         required: [true, "Es necesario ingresar el id"]
     },
 
-    credenciales: {
+    credenciales:[ {
 
         strCorreo: {
 
@@ -36,7 +36,7 @@ const UsuarioSchema = mongoose.Schema({
         }
           
 
-    }
+    }]
   
 });
     
