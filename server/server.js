@@ -9,7 +9,8 @@ const routes  = require("./routes/index");
 
 app.use(bodyParser.urlencoded({extended: true})); 
 app.use(bodyParser.json());
-
+app.use(express.json());
+app.use("/api",routes);
 app.get("/", (request, response) => {
 return response.status(200).json({
  msg: "Bienvenido a la api de Enrique",
@@ -20,7 +21,7 @@ return response.status(200).json({
    
 
 
-app.use("/api",routes);
+
 
 mongoose.connect(process.env.URLDB,{})
 .then(() => {

@@ -18,4 +18,4 @@ const PuestoSchema = mongoose.Schema({
 });
 
 
-module.exports = mongoose.model("puesto", PuestoSchema);
+module.exports = mongoose.model("Puesto", PuestoSchema);
