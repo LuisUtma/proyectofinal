@@ -4,7 +4,7 @@
   "description": "\"Este es el primer servidor de nodejs\"",
   "main": "Server.js",
   "scripts": {
-    "start": "node server.js"
+    "web":"node server.js"
   },
   "keywords": [
     "node",
