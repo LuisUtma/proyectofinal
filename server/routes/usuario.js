@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt');
 const { request } = require("express");
+const { model, default: mongoose } = require("mongoose");
 const express = require("express");
 const { response } = require(".");
 

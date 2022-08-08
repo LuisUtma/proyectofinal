@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-const usuario = require ("./usuario");
-const Empresa = require ("./empresa");
-const Puesto = require ("./puesto");
+const usuario = require ("./Usuario");
+const Empresa = require ("./Empresa");
+const Puesto = require ("./Puesto");
 
-app.use("/usuario", usuario);//http://localhost:3000/api/usuario/
-app.use("/empresa", Empresa);
-app.use("/puesto", Puesto);
+app.use("/Usuario", usuario);//http://localhost:3000/api/usuario/
+app.use("/Empresa", Empresa);
+app.use("/Puesto", Puesto);
 
 module.exports = app;

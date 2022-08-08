@@ -5,7 +5,6 @@ const { response } = require(".");
 
 const { db } = require('../models/puesto.models');
 const PuestoModels = require('../models/puesto.models');
-const puestoModels = require("../models/puesto.models");
 
 
 const router = express.Router();
@@ -13,7 +12,7 @@ const router = express.Router();
 
 
 //METODO POST CON BODY PARSER
-router.post('/', (req, response) => {
+router.post('/', (req, res) => {
 
   
     const puesto = new PuestoModels(req.body);
@@ -29,7 +28,7 @@ router.post('/', (req, response) => {
         
     })
     .catch((err) => {
-        return response.status(400).json({
+        return res.status(400).json({
             msg:"Error al registrar el puesto",
             status: 400,
             cont: {
