@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento</title>
+    <link rel="stylesheet" href="css/Stylesheet.css">
+</head>
+<body>
+    <div class="Container">
+    <div class="estacionamiento">
+        <div class="filaA">
+            <div class="espacio" data-lugar="A1">A1</div>
+            <div class="espacio" data-lugar="A2">A2</div>
+            <div class="espacio" data-lugar="A3">A3</div>
+            <div class="espacio" data-lugar="A4">A4</div>
+            <div class="espacio" data-lugar="A5">A5</div>
+            <div class="espacio" data-lugar="A6">A6</div>
+            <div class="espacio" data-lugar="A7">A7</div>
+            <div class="espacio" data-lugar="A8">A8</div>
+            <div class="espacio" data-lugar="A9">A9</div>
+            <div class="espacio" data-lugar="A10">A10</div>
+            <div class="Campo" style="background-color: rgb(95, 94, 94);"></div>
+            <div class="Campo" style="background-color: rgb(95, 94, 94);"></div>
+            <div class="Campo" style="background-color: rgb(95, 94, 94);"></div>
+            <div class="Campo" style="background-color: rgb(95, 94, 94);"></div>
+            <div class="Campo" style="background-color: rgb(95, 94, 94);"></div>
+            <div class="Campo" style="background-color: rgb(95, 94, 94);"></div>
+           
+        </div>
+        <!-- La fila 2 está vacía, así que no agregamos espacios aquí -->
+        <div class="filaB fila-vacia">
+            <div class="Campo"></div>
+            <div class="espacio" data-lugar="B1">B1</div>
+            <div class="espacio" data-lugar="B2">B2</div>
+            <div class="espacio" data-lugar="B3">B3</div>
+            <div class="espacio" data-lugar="B4">B4</div>
+            <div class="espacio" data-lugar="B5">B5</div>
+            <div class="Campo"></div>
+            <div class="espacio" data-lugar="B6">B6</div>
+            <div class="espacio" data-lugar="B7">B7</div>
+            <div class="espacio" data-lugar="B8">B8</div>
+            <div class="espacio" data-lugar="B9">B9</div>
+            <div class="Campo"></div>
+
+            <div class="Jardin"></div>
+
+        </div>
+        <div class="filaC">
+            <div class="Campo"></div>
+            <div class="espacio" data-lugar="C1">C1</div>
+            <div class="espacio" data-lugar="C2">C2</div>
+            <div class="espacio" data-lugar="C3">C3</div>
+            <div class="espacio" data-lugar="C4">C4</div>
+            <div class="espacio" data-lugar="C5">C5</div>
+            <div class="Campo"></div>
+            <div class="espacio" data-lugar="C6">C6</div>
+            <div class="espacio" data-lugar="C7">C7</div>
+            <div class="espacio" data-lugar="C8">C8</div>
+            <div class="espacio" data-lugar="C9">C9</div>
+            <div class="Campo"></div>
+            <div class="Jardin"></div>
+        </div>
+        <div class="filaD">
+            <div class="Campo"></div>
+            <div class="espacio" data-lugar="D1">D1</div>
+            <div class="espacio" data-lugar="D2">D2</div>
+            <div class="espacio" data-lugar="D3">D3</div>
+            <div class="espacio" data-lugar="D4">D4</div>
+            <div class="espacio" data-lugar="D5">D5</div>
+            <div class="espacio" data-lugar="D6">D6</div>
+            <div class="espacio" data-lugar="D7">D7</div>
+            <div class="espacio" data-lugar="D8">D8</div>
+            <div class="espacio" data-lugar="D9">D9</div>
+            <div class="espacio" data-lugar="D10">D10</div>
+            <div class="Campo"></div>
+            <div class="Caseta">Caseta</div>
+            
+            <div class="Campo"></div>
+            
+        </div>
+    </div>
+
+    <div>
+
+       
+        <button class="desocuparEspacio"id="generarTicket">Generar Ticket</button>
+
+    </div>
+
+</div>
+<div class="Ticket" style="display:none;"> 
+    <div class="ticket-header">
+        <h2>UTMAT</h2>
+        <h2>Ticket de Estacionamiento</h2>
+    </div>
+    <div class="ticket-info">
+        <p><span>Fecha:</span> <span id="fechaTicket">6 de marzo de 2024</span></p>
+        <p><span>Lugar de Estacionamiento:</span> <span id="lugarEstacionamiento">A3</span></p>
+        <p><span>Nombre:</span> Juan Pérez</p>
+    </div>
+    <div class="ticket-footer">
+        <p>¡Gracias por usar nuestro servicio de estacionamiento!</p>
+    </div>
+</div>
+    
+    
+    
+
+
+</body>
+<script src="Scripts/Actualizacion.js"></script>
+<script src="Scripts/DesocuparEspacio.js"></script>
+<script src="Scripts/GenerarTicket.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</html>

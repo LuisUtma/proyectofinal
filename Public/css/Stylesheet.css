@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('/uni.jfif'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+}
+
+.verde {
+    background-color: green;
+}
+.rojo {
+    background-color: red;
+}
+
+
+
+
+.Container{
+
+    gap: 50px;
+    display: flex;
+    margin: 15px 0px;
+}
+.estacionamiento {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5px; /* Espacio entre filas */
+    
+    backdrop-filter: blur(5px);
+}
+
+.filaA {
+    display: flex;
+    gap: 2px; /* Espacio entre espacios de estacionamiento */
+    padding-bottom: 50px;
+}
+
+.filaB {
+    display: flex;
+    gap: 2px; /* Espacio entre espacios de estacionamiento */
+   
+}
+.filaC {
+    display: flex;
+    gap: 2px; /* Espacio entre espacios de estacionamiento */
+    padding-bottom: 50px;
+}
+.filaD {
+    display: flex;
+    gap: 2px; /* Espacio entre espacios de estacionamiento */
+   
+}
+
+.espacio {
+    width: 50px; /* Ancho del espacio de estacionamiento */
+    height: 100px; /* Alto del espacio de estacionamiento */
+    background-color:green;
+    
+    text-align:center;
+    color: #fff6f6;
+}
+
+.Caseta {
+    width: 200px; /* Ancho del espacio de estacionamiento */
+    height: 100px; /* Alto del espacio de estacionamiento */
+    background-color:rgb(88, 88, 88);
+    
+    text-align:center;
+    color: #fff6f6;
+}
+
+.Jardin {
+    width: 200px; /* Ancho del espacio de estacionamiento */
+    height: 100px; /* Alto del espacio de estacionamiento */
+    background-color:rgb(0, 255, 42);
+    
+    text-align:center;
+    color: #fff6f6;
+}
+
+
+/* Si quieres que la fila vacía tenga un espacio visual */
+.fila-vacia {
+    
+    height: 100px; /* Igual al alto de los espacios de estacionamiento para mantener el diseño uniforme */
+}
+
+
+.Campo {
+    width: 50px; /* Ancho del espacio de estacionamiento */
+    height: 100px; /* Alto del espacio de estacionamiento */
+    
+    text-align: center;
+    color: #fff6f6;
+}
+
+#generarTicket {
+    display: block;
+    margin: 20px auto;
+    /* Otros estilos como padding, fondo, color de texto, etc. */
+}
+
+/*ticket*/
+
+.Ticket {
+
+    flex: 0 0  15%; /* Ajusta el ancho según tu preferencia */
+    border: 1px solid black; /* Añade un borde para visualización */
+    padding-right: 20px; /* Añade un relleno interior para separar el contenido del borde */
+    font-family: Arial, sans-serif; /* Utiliza una fuente común */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.Ticket h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
+}
+
+.Ticket p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.ticket-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ticket-info span {
+    font-weight: bold;
+    text-align: center;
+}
+
+.ticket-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.desocuparEspacio {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo cuando el cursor está sobre el botón */
+  .desocuparEspacio:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo cuando el botón está presionado */
+  .desocuparEspacio:active {
+    background-color: #398038;
+  }
+
+
+  .input-estilizado {
+    
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+  }
+  
+  /* Estilo cuando el cursor está sobre el input */
+  .input-estilizado:hover {
+    border-color: #4CAF50;
+  }
+  
+  /* Estilo cuando el input está enfocado */
+  .input-estilizado:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Agrega un efecto de sombra al enfocar */
+  }
+
+
+  
