@@ -5,7 +5,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const username = formData.get('username');
     const password = formData.get('password');
 
-    fetch('http://localhost:3000/login', {
+    fetch('/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

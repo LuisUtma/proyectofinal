@@ -16,7 +16,7 @@ document.getElementById('generarTicket').addEventListener('click', function() {
    if (espaciosDisponibles.length > 0) {
         const seleccionado = espaciosDisponibles[Math.floor(Math.random() * espaciosDisponibles.length)]; // Selecciona uno al azar de los disponibles
         document.getElementById('lugarEstacionamiento').textContent = seleccionado.textContent; // Establece el lugar dinámicamente
-        fetch('http://localhost:3000/generarTicket', {
+        fetch('/generarTicket', {
         method: 'POST', // Método HTTP POST para enviar datos
         headers: {
             'Content-Type': 'application/json' // Indica que los datos se enviarán en formato JSON

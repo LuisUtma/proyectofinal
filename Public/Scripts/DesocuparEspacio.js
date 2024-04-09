@@ -31,7 +31,7 @@ document.getElementById('desocuparEspacio').addEventListener('click', function()
             espacio.style.backgroundColor = 'green'; // Cambia el color a verde si es rojo
             
             // Realizar la solicitud de fetch para desocupar el espacio
-            fetch('http://localhost:3000/EspacioLibre', {
+            fetch('/EspacioLibre', {
                 method: 'POST', // Utiliza el método POST para modificar un campo en la base de datos
                 headers: {
                     'Content-Type': 'application/json' // Especifica el tipo de contenido como JSON
